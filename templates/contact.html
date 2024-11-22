@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Page</title>
+    <link rel="stylesheet" href="contact.css">
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/30/72/d7/3072d780c677072f5037aeb2413e2061.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .form-container,
+        .contact-details {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .form-container {
+            flex: 1;
+            max-width: 48%;
+        }
+
+        .contact-details {
+            flex: 1;
+            max-width: 48%;
+        }
+
+        .form-container h2,
+        .contact-details h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .social-media {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-details .office {
+            margin-bottom: 20px;
+        }
+
+        .contact-details .office h3 {
+            font-size: 22px;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .contact-details .office p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .contact-details .office p.phone {
+            font-weight: bold;
+        }
+
+        .more-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .more-info a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .more-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <h1 style="display: inline;"><a href="index.html">Home</a></h1> |
+            <h1 style="display: inline;"><a href="about.html">About</a></h1> |
+            <h1 style="display: inline;"><a href="register.html">Register</a></h1> |
+            <h1 style="display: inline;"><a href="Result.html">Result</a></h1> |
+            <h1 style="display: inline;"><a href="contact.html">Contact</a></h1>
+        </nav>
+
+    </header>
+
+
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="/submit_form" method="post">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <label for="mobile">Mobile No</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Your mobile number" required>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/SSBTCOETOfficial?mibextid=ZbWKwL" target="_blank">
+                    <img src="img/FB.jpeg" alt="Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/ssbt_explosers?igsh=aWhyMnlhN2N1Z3Yz" target="_blank">
+                    <img src="img/insta.jpeg" alt="Instagram">
+                </a>
+
+                <a href="https://youtube.com/@ssbtsworld?si=Cin6g5O1I5p0XkGt" target="_blank">
+                    <img src="img/utube.jpeg" alt="YouTube">
+                </a>
+
+                <a href="https://api.whatsapp.com/send/?phone=%2B919420107905&amp;text=Hi..+company&amp;type=phone_number&amp;app_absent=0"
+                    target="_blank">
+                    <img src="img/wp.jpeg" alt="WhatsApp">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="contact-details">
+            <h2>Contact by Phone or Location</h2>
+
+            <div class="office">
+                <h3>Head Office</h3>
+                <p>KBC NMU Jalgaon</p>
+                <p>Kavayitri Bahinabai Chaudhari
+                    North Maharashtra University,
+                    P. O. Box No. - 80,
+                    Umavi Nagar,
+                    Jalgaon - 425001 (M.S.) India</p>
+                <p class="phone">0257-2257250</p>
+            </div>
+
+            <div class="office">
+                <h3>Branch Office</h3>
+                <p>SSBT's College of Engineering & Technology</p>
+                <p>Post Box 94, Bambhori, Tal-Dharangaon, Jalgaon-425 001 (MS), India</p>
+                <p class="phone"> 0257-2258393</p>
+            </div>
+
+            <div class="office">
+                <h3>Corporate Office</h3>
+                <p>Department of College </p>
+                <p>SSBT's College of Engineering & Technology</p>
+                <p>Post Box 94, Bambhori, Tal-Dharangaon, Jalgaon-425 001 (MS), India</p>
+                <p class="phone">0257-2258394</p>
+            </div>
+
+            <div class="more-info">
+                <p>For more information, use this location:</p>
+                <a href="https://maps.app.goo.gl/ciDt2SsArEfAYAFm7" target="_blank">View on Google Maps</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Crop Disease Prediction. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
